@@ -1,21 +1,18 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
+   loop: true,
+    
+  keyboard: {
+  enabled: true,
+  onlyInViewport: false,
   },
+ 
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+    nextEl: '.slider-button--next',
+    prevEl: '.slider-button--prev',
   },
 });
+
+ 
