@@ -1,7 +1,6 @@
 @media ( max-width: 1200px )
   .container
     max-width: 960px
-
   .hotel
     &__slide
       width: 590px
@@ -13,7 +12,9 @@
   .card
     width: 230px
     height: 230px
-
+  .footer
+    &__input
+      flex-basis: 100%
 @media ( max-width: 992px )
   .container,
   .newsletter-wrapper
@@ -61,6 +62,42 @@
   .card
     width: 340px
     height: 250px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 47%
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__additional
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 5
+      &-form
+        grid-row: 4
+        grid-column: span 5
+    &__title
+      font-style: normal
+      font-weight: 700
+      font-size: 18px
+      line-height: 23px
 
 @media (max-width: 768px)
   .container
@@ -146,6 +183,9 @@
   .card
     width: 49%
     height: 255px
+  .footer
+    &__input
+      flex-basis: 100%
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -162,3 +202,29 @@
     width: 100%
   .card
     width: 100%
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
